@@ -1,4 +1,4 @@
-package panagram;
+package twins;
 
 import java.io.*;
 import java.util.*;
@@ -10,27 +10,21 @@ public class Main{
       out = new PrintWriter(new BufferedOutputStream(System.out));
       // Solution
       int n = sc.nextInt();
-      if (n < 26)
-    	  out.println("NO");
-      else {
-    	  String s = sc.nextLine();
-    	  s = s.toLowerCase();
-    	  boolean arr[] = new boolean [26];
-    	  for (int i=0; i<n ;i++) {
-    		  arr[s.charAt(i)-'a'] = true;
-    	  }
-    	  boolean alltrue = true;
-    	  for (int i=0; i<26; i++) {
-    		  if (!arr[i]) {
-    			  alltrue = false;
-    			  break;
-    		  }
-    	  }
-    	  if (alltrue)
-    		  out.println("YES");
-    	  else out.println("NO");
+      List<Integer> list = new ArrayList<Integer>();
+      int totalsum = 0;
+      for (int i=0; i<n; i++) {
+    	  list.add(sc.nextInt());
+    	  totalsum += list.get(list.size()-1);
       }
+      Collections.sort(list, Comparator.reverseOrder());
       
+      int greedy = 0; int cnt = 0;
+      while (greedy <= totalsum) {
+    	  greedy += list.get(cnt);
+    	  totalsum -= list.get(cnt);
+    	  cnt++;
+      }
+      out.println(cnt);
       // Solution end
       out.close();
    }
