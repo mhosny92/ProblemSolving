@@ -1,4 +1,4 @@
-package carrot.cakes;
+package  codeforces.carrot.cakes;
 
 import java.io.BufferedReader;
 import java.io.IOException;

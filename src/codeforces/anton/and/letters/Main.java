@@ -1,4 +1,4 @@
-package anton.and.letters;
+package  codeforces.anton.and.letters;
 
 import java.io.BufferedReader;
 import java.io.IOException;

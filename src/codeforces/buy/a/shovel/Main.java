@@ -1,4 +1,4 @@
-package buy.a.shovel;
+package  codeforces.buy.a.shovel;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package magnets;
+package  codeforces.magnets;
 
 import java.io.*;
 import java.util.*;

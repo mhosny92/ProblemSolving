@@ -1,4 +1,4 @@
-package lineland.mail;
+package  codeforces.lineland.mail;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

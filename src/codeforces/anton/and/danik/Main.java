@@ -1,4 +1,4 @@
-package anton.and.danik;
+package codeforces.anton.and.danik;
 
 import java.io.*;
 import java.util.*;

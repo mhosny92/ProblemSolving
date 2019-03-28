@@ -1,4 +1,4 @@
-package boy.or.girl;
+package  codeforces.boy.or.girl;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

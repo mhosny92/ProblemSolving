@@ -1,5 +1,6 @@
-package way.to.lng.words;
+package  codeforces.way.to.lng.words;
 
+import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,20 +8,20 @@ import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
 public class Main {
-//	public static void main(String[] args) {
-//		MyScanner sc = new MyScanner();
-//		out = new PrintWriter(new BufferedOutputStream(System.out));
-//		// Start writing your solution here. -------------------------------------
-//		int n = sc.nextInt();
-//		for (int i=0; i<n ;i++) {
-//			String s = sc.nextLine();
-//			if (s.length() > 10)
-//			out.println(s.charAt(0) + "" + (s.length()-2) + "" +s.charAt(s.length()-1));
-//			else out.println(s);
-//		}
-//		// Stop writing your solution here. -------------------------------------
-//		out.close();
-//	}
+	public static void main(String[] args) {
+		MyScanner sc = new MyScanner();
+		out = new PrintWriter(new BufferedOutputStream(System.out));
+		// Start writing your solution here. -------------------------------------
+		int n = sc.nextInt();
+		for (int i=0; i<n ;i++) {
+			String s = sc.nextLine();
+			if (s.length() > 10)
+			out.println(s.charAt(0) + "" + (s.length()-2) + "" +s.charAt(s.length()-1));
+			else out.println(s);
+		}
+		// Stop writing your solution here. -------------------------------------
+		out.close();
+	}
 
 	// -----------PrintWriter for faster output---------------------------------
 	public static PrintWriter out;

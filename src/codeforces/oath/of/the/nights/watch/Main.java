@@ -1,4 +1,4 @@
-package oath.of.the.nights.watch;
+package  codeforces.oath.of.the.nights.watch;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

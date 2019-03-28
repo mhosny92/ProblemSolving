@@ -1,4 +1,4 @@
-package snacktower;
+package  codeforces.snacktower;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

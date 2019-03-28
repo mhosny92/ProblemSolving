@@ -1,4 +1,4 @@
-package bear.and.big.brother;
+package  codeforces.bear.and.big.brother;
 
 import java.io.*;
 import java.util.*;

@@ -1,39 +1,42 @@
-package team.olympiad;
+package  codeforces.team.olympiad;
 
+import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.StringTokenizer;
 
 public class Main {
-//	public static void main(String[] args) {
-//		MyScanner sc = new MyScanner();
-//		out = new PrintWriter(new BufferedOutputStream(System.out));
-//		// Start writing your solution here. -------------------------------------
-//		int n = sc.nextInt();
-//		List<Integer> one = new ArrayList<Integer>();
-//		List<Integer> two = new ArrayList<Integer>();
-//		List<Integer> three = new ArrayList<Integer>();
-//		for (int i=0; i<n ;i++) {
-//			int temp = sc.nextInt();
-//			if (temp == 1) {
-//				one.add(i+1);
-//			} else if (temp == 2) {
-//				two.add(i+1);
-//			}else {
-//				three.add(i+1);
-//			}
-//		}
-//		int min = Math.min(one.size(), two.size());
-//		min = Math.min(min, three.size());
-//		out.println(min);
-//		for (int i=0; i<min; i++) {
-//			out.println(one.get(i) + " " + two.get(i) + " " + three.get(i));
-//		}
-//		// Stop writing your solution here. -------------------------------------
-//		out.close();
-//	}
+	public static void main(String[] args) {
+		MyScanner sc = new MyScanner();
+		out = new PrintWriter(new BufferedOutputStream(System.out));
+		// Start writing your solution here. -------------------------------------
+		int n = sc.nextInt();
+		List<Integer> one = new ArrayList<Integer>();
+		List<Integer> two = new ArrayList<Integer>();
+		List<Integer> three = new ArrayList<Integer>();
+		for (int i=0; i<n ;i++) {
+			int temp = sc.nextInt();
+			if (temp == 1) {
+				one.add(i+1);
+			} else if (temp == 2) {
+				two.add(i+1);
+			}else {
+				three.add(i+1);
+			}
+		}
+		int min = Math.min(one.size(), two.size());
+		min = Math.min(min, three.size());
+		out.println(min);
+		for (int i=0; i<min; i++) {
+			out.println(one.get(i) + " " + two.get(i) + " " + three.get(i));
+		}
+		// Stop writing your solution here. -------------------------------------
+		out.close();
+	}
 
 	// -----------PrintWriter for faster output---------------------------------
 	public static PrintWriter out;

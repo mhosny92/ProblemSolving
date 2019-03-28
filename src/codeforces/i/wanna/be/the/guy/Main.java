@@ -1,4 +1,4 @@
-package i.wanna.be.the.guy;
+package  codeforces.i.wanna.be.the.guy;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

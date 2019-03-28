@@ -1,4 +1,4 @@
-package juicer;
+package  codeforces.juicer;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

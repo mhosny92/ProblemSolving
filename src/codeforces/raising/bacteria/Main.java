@@ -1,4 +1,4 @@
-package raising.bacteria;
+package  codeforces.raising.bacteria;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

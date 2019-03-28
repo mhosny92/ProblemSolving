@@ -1,4 +1,4 @@
-package mahmoud.and.longest.uncommon.subsequence;
+package  codeforces.mahmoud.and.longest.uncommon.subsequence;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

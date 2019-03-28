@@ -1,4 +1,4 @@
-package is.it.rated;
+package  codeforces.is.it.rated;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

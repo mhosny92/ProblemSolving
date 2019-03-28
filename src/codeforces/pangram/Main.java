@@ -1,4 +1,4 @@
-package pangram;
+package  codeforces.pangram;
 
 import java.io.*;
 import java.util.*;

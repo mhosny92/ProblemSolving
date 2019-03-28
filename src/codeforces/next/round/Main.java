@@ -1,4 +1,4 @@
-package next.round;
+package  codeforces.next.round;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

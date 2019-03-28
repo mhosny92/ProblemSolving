@@ -1,4 +1,4 @@
-package beautiful.matrix;
+package  codeforces.beautiful.matrix;
 
 import java.io.*;
 import java.util.*;

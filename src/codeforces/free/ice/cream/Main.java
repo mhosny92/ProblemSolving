@@ -1,5 +1,6 @@
-package free.ice.cream;
+package  codeforces.free.ice.cream;
 
+import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,29 +8,29 @@ import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
 public class Main {
-//	public static void main(String[] args) {
-//		MyScanner sc = new MyScanner();
-//		out = new PrintWriter(new BufferedOutputStream(System.out));
-//		// Start writing your solution here. -------------------------------------
-//		int n = sc.nextInt(), kids = 0;
-//		long init = sc.nextLong();
-//		for (int i=0; i<n; i++) {
-//			String s = sc.next();
-//			long val = sc.nextLong();
-//			if (s.equals("+")) {
-//				init += val;
-//			}else {
-//				if (init >= val) {
-//					init -= val;
-//				}else {
-//					kids++;
-//				}
-//			}
-//		}
-//		out.println(init + " " +kids);
-//		// Stop writing your solution here. -------------------------------------
-//		out.close();
-//	}
+	public static void main(String[] args) {
+		MyScanner sc = new MyScanner();
+		out = new PrintWriter(new BufferedOutputStream(System.out));
+		// Start writing your solution here. -------------------------------------
+		int n = sc.nextInt(), kids = 0;
+		long init = sc.nextLong();
+		for (int i=0; i<n; i++) {
+			String s = sc.next();
+			long val = sc.nextLong();
+			if (s.equals("+")) {
+				init += val;
+			}else {
+				if (init >= val) {
+					init -= val;
+				}else {
+					kids++;
+				}
+			}
+		}
+		out.println(init + " " +kids);
+		// Stop writing your solution here. -------------------------------------
+		out.close();
+	}
 
 	// -----------PrintWriter for faster output---------------------------------
 	public static PrintWriter out;

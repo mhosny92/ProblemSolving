@@ -1,9 +1,9 @@
-package gravity.flip;
+package  codeforces.gravity.flip;
 import java.io.*;
 import java.util.*;
 
 public class Main {
-	/*
+	
 	public static void main(String[] args) {
 		MyScanner sc = new MyScanner();
 		out = new PrintWriter(new BufferedOutputStream(System.out));
@@ -21,7 +21,7 @@ public class Main {
 		// Stop writing your solution here. -------------------------------------
 		out.close();
 	}
-	*/
+	
 	// -----------PrintWriter for faster output---------------------------------
 	public static PrintWriter out;
 

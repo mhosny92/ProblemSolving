@@ -1,4 +1,4 @@
-package forming.teams;
+package  codeforces.forming.teams;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

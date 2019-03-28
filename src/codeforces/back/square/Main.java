@@ -1,4 +1,4 @@
-package back.square;
+package  codeforces.back.square;
 
 import java.io.*;
 import java.util.*;

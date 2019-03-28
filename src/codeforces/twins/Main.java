@@ -1,4 +1,4 @@
-package twins;
+package  codeforces.twins;
 
 import java.io.*;
 import java.util.*;

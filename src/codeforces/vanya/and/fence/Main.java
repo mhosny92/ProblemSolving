@@ -1,4 +1,4 @@
-package vanya.and.fence;
+package  codeforces.vanya.and.fence;
 
 import java.io.*;
 import java.util.*;

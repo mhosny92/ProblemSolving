@@ -1,4 +1,4 @@
-package colorful.stones.simplified.edition;
+package  codeforces.colorful.stones.simplified.edition;
 
 import java.io.BufferedReader;
 import java.io.IOException;

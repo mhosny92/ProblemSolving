@@ -1,4 +1,4 @@
-package keyboard;
+package  codeforces.keyboard;
 
 import java.io.*;
 import java.util.*;
