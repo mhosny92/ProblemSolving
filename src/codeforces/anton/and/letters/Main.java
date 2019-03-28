@@ -7,24 +7,24 @@ import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
 public class Main {
-//	public static void main(String[] args) {
-//		MyScanner sc = new MyScanner();
-//		out = new PrintWriter(new BufferedOutputStream(System.out));
-//		// Start writing your solution here. -------------------------------------
-//		String s = sc.nextLine();
-//		if (s.length() == 2)
-//			out.println(0);
-//		else {
-//			Set<String> set = new HashSet<String>();
-//			s = s.substring(1, s.length()-1);
-//			String arr[] = s.split(", ");
-//			for (int i=0; i< arr.length; i++)
-//				set.add(arr[i]);
-//			out.println(set.size());
-//		}
-//		// Stop writing your solution here. -------------------------------------
-//		out.close();
-//	}
+	public static void main(String[] args) {
+		MyScanner sc = new MyScanner();
+		out = new PrintWriter(new BufferedOutputStream(System.out));
+		// Start writing your solution here. -------------------------------------
+		String s = sc.nextLine();
+		if (s.length() == 2)
+			out.println(0);
+		else {
+			Set<String> set = new HashSet<String>();
+			s = s.substring(1, s.length()-1);
+			String arr[] = s.split(", ");
+			for (int i=0; i< arr.length; i++)
+				set.add(arr[i]);
+			out.println(set.size());
+		}
+		// Stop writing your solution here. -------------------------------------
+		out.close();
+	}
 
 	// -----------PrintWriter for faster output---------------------------------
 	public static PrintWriter out;
