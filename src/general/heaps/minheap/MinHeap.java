@@ -3,7 +3,6 @@ package general.heaps.minheap;
 import java.util.Arrays;
 
 public class MinHeap<T extends Comparable> {
-    private final int initialcapcaity = 10;
     private int heapSize;
     private int capacity;
     private T[] heapArr;
@@ -13,7 +12,7 @@ public class MinHeap<T extends Comparable> {
             throw new IllegalStateException();
         this.heapSize = heapSize;
         this.heapArr = heapArr;
-        this.capacity = initialcapcaity;
+        this.capacity = heapSize;
         heapify(0);
     }
 
