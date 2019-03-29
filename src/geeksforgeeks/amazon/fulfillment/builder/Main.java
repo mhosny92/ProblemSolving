@@ -1,6 +1,6 @@
 package geeksforgeeks.amazon.fulfillment.builder;
 
-import general.heaps.minheap.MinHeap;
+import general.heaps.MinHeap;
 
 import java.io.BufferedOutputStream;
 import java.io.PrintWriter;
@@ -13,7 +13,8 @@ public class Main {
         //---------------------------------------- Solution ---------------------------
         int n = scanner.nextInt();
         long sum = 0;
-        Integer [] arr  = new Integer[n];
+        //MinHeap<Integer> heap = new MinHeap<>(Integer.class);
+        Integer arr[] = new Integer[n];
         for (int i = 0; i < n; i++) {
             arr[i] = scanner.nextInt();
         }
