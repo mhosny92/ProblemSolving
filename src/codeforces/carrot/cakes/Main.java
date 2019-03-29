@@ -1,27 +1,24 @@
 package  codeforces.carrot.cakes;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.StringTokenizer;
 
 public class Main {
-//	public static void main(String[] args) {
-//		MyScanner sc = new MyScanner();
-//		out = new PrintWriter(new BufferedOutputStream(System.out));
-//		// Start writing your solution here. -------------------------------------
-//		int n = sc.nextInt(), t = sc.nextInt(), k = sc.nextInt(), d = sc.nextInt();
-//		int r = (int) Math.ceil((double) n / (double) k);
-//		int f1 = t * r;
-//		if (d + t >= f1)
-//			out.println("NO");
-//		else {
-//			out.println("YES");
-//		}
-//		// Stop writing your solution here. -------------------------------------
-//		out.close();
-//	}
+	public static void main(String[] args) {
+		MyScanner sc = new MyScanner();
+		out = new PrintWriter(new BufferedOutputStream(System.out));
+		// Start writing your solution here. -------------------------------------
+		int n = sc.nextInt(), t = sc.nextInt(), k = sc.nextInt(), d = sc.nextInt();
+		int r = (int) Math.ceil((double) n / (double) k);
+		int f1 = t * r;
+		if (d + t >= f1)
+			out.println("NO");
+		else {
+			out.println("YES");
+		}
+		// Stop writing your solution here. -------------------------------------
+		out.close();
+	}
 
 	// -----------PrintWriter for faster output---------------------------------
 	public static PrintWriter out;
