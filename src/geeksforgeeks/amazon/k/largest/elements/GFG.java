@@ -7,7 +7,7 @@ import java.io.BufferedOutputStream;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class Main {
+public class GFG {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         PrintWriter out = new PrintWriter(new BufferedOutputStream(System.out));
