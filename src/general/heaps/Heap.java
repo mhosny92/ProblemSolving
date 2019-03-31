@@ -23,6 +23,7 @@ public abstract class Heap<T extends Comparable> {
     }
 
     protected abstract void heapifyDown(int index);
+
     protected abstract void heapifyUp(int index);
 
     public T peek() {
