@@ -10,7 +10,7 @@ import java.util.PriorityQueue;
 import java.util.Set;
 
 public class Prim {
-    
+
     public static Pair<Integer, Integer>[] getMST(Graph graph) {
         int verticesSize = graph.getVerticesSize(); // contains the number of vertices in the graph.
         boolean[] mst = new boolean[verticesSize];// boolean array that contains visited vertices as true.
@@ -35,7 +35,7 @@ public class Prim {
             for (int i = 0; i < vertexEdges.size(); i++) {
                 int connectedVertex = vertexEdges.get(i).getConnectedVertex();
                 int weight = vertexEdges.get(i).getWeight();
-                if(!mst[connectedVertex] && keys[connectedVertex] > weight) { // Check if the vertex is not processed before the weight is less than keys[connectedVertex]
+                if (!mst[connectedVertex] && keys[connectedVertex] > weight) { // Check if the vertex is not processed before the weight is less than keys[connectedVertex]
                     pq.add(new Pair(connectedVertex, weight));
                     result[connectedVertex] = new Pair<>(vertex, weight);
                     keys[connectedVertex] = weight;

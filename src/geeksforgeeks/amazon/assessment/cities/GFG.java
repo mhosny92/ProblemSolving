@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class GFG {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         PrintWriter out = new PrintWriter(new BufferedOutputStream(System.out));
 
@@ -16,7 +16,7 @@ public class GFG {
         for (int i = 0; i < totalAvailableRoads; i++) {
             int vertexOne = scanner.nextInt();
             int vertexTwo = scanner.nextInt();
-            graph.addEdge(vertexOne -1, vertexTwo -1, 0);
+            graph.addEdge(vertexOne - 1, vertexTwo - 1, 0);
         }
         int roadsToBeRepaired = scanner.nextInt();
         for (int i = 0; i < roadsToBeRepaired; i++) {
@@ -24,7 +24,7 @@ public class GFG {
             int vertexTwo = scanner.nextInt() - 1;
             int weight = scanner.nextInt();
             List<Edge> vertexOneEdges = graph.getVertexEdges(vertexOne);
-            List<Edge> vertextwoEdges = graph.getVertexEdges(vertexTwo);
+            List<Edge> vertexTwoEdges = graph.getVertexEdges(vertexTwo);
             // Update adj list weights for first vertex
             for (Edge e : vertexOneEdges) {
                 if (e.getConnectedVertex() == vertexTwo) {
@@ -33,7 +33,7 @@ public class GFG {
                 }
             }
             // Update adj list weights for second vertex
-            for (Edge e : vertextwoEdges) {
+            for (Edge e : vertexTwoEdges) {
                 if (e.getConnectedVertex() == vertexOne) {
                     e.setWeight(weight);
                     break;
