@@ -1,8 +1,8 @@
 package geeksforgeeks.amazon.assessment.cities;
 
 class Edge {
-    int connectedVertex;
-    int weight;
+    private int connectedVertex;
+    private int weight;
 
     public Edge(int vertex, int weight) {
         this.connectedVertex = vertex;
@@ -16,5 +16,9 @@ class Edge {
 
     public int getWeight() {
         return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
 }
