@@ -1,11 +1,14 @@
-package geeksforgeeks.amazon.assessment.cities;
+package general.graphs.minimum.spanning.tree;
+
+import general.graphs.Edge;
+import general.graphs.Graph;
 
 import java.io.BufferedOutputStream;
 import java.io.PrintWriter;
 import java.util.List;
 import java.util.Scanner;
 
-public class GFG {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         PrintWriter out = new PrintWriter(new BufferedOutputStream(System.out));
@@ -27,24 +30,31 @@ public class GFG {
             List<Edge> vertexTwoEdges = graph.getVertexEdges(vertexTwo);
             // Update adj list weights for first vertex
             for (Edge e : vertexOneEdges) {
-                if (e.getConnectedVertex() == vertexTwo) {
+                if (e.getDestination() == vertexTwo) {
                     e.setWeight(weight);
                     break;
                 }
             }
             // Update adj list weights for second vertex
             for (Edge e : vertexTwoEdges) {
-                if (e.getConnectedVertex() == vertexOne) {
+                if (e.getDestination() == vertexOne) {
                     e.setWeight(weight);
                     break;
                 }
             }
         }
-        Pair[] result = Prim.getMST(graph);
+        Edge[] primResult = Prim.getMST(graph);
         long totalWeight = 0;
-        for (int i = 0; i < result.length; i++) {
-            totalWeight += result[i].getValue().longValue();
-            out.println("Parent vertex: " + result[i].getKey() + " -> " + i + " weight: " + result[i].getValue());
+        for (int i = 0; i < primResult.length; i++) {
+            totalWeight += primResult[i].getWeight();
+            out.println("Parent vertex: " + (primResult[i].getSource()+1) + " -> " + (primResult[i].getDestination()+1) + " weight: " + primResult[i].getWeight());
+        }
+        out.println("Total weight: " + totalWeight);
+        totalWeight = 0;
+        Edge[] kruskalResult = Kruskal.getMST(graph);
+        for (int i = 0; i < kruskalResult.length; i++) {
+            totalWeight += kruskalResult[i].getWeight();
+            out.println("Parent vertex: " + (kruskalResult[i].getSource()+1) + " -> " + (kruskalResult[i].getDestination()+1) + " weight: " + kruskalResult[i].getWeight());
         }
         out.println("Total weight: " + totalWeight);
         out.close();

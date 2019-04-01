@@ -1,4 +1,4 @@
-package geeksforgeeks.amazon.assessment.cities;
+package general.graphs;
 
 public class Pair<T extends Integer, K extends Number> implements Comparable<Pair> {
 
@@ -25,10 +25,6 @@ public class Pair<T extends Integer, K extends Number> implements Comparable<Pai
 
     @Override
     public int compareTo(Pair p) {
-        if (this.value.doubleValue() == p.value.doubleValue())
-            return 0;
-        else if (this.value.doubleValue() > p.value.doubleValue())
-            return 1;
-        else return -1;
+        return this.value.intValue() - p.value.intValue();
     }
 }
