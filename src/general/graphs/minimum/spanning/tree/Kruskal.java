@@ -9,19 +9,19 @@ import java.util.PriorityQueue;
 
 public class Kruskal {
 
-    static int find(int[] parent, int i){
+    static int find(int[] parent, int i) {
         if (parent[i] == -1)
             return i;
         return find(parent, parent[i]);
     }
 
-    static void union(int[] parent, int x, int y){
+    static void union(int[] parent, int x, int y) {
         int xset = find(parent, x);
         int yset = find(parent, y);
         parent[xset] = yset;
     }
 
-    static boolean containsCycle(int[] parent, int src, int des){
+    static boolean containsCycle(int[] parent, int src, int des) {
         int srcSet = find(parent, src);
         int desSet = find(parent, des);
         if (srcSet == desSet)
@@ -30,7 +30,7 @@ public class Kruskal {
         return false;
     }
 
-    public static Edge[] getMST(Graph graph){
+    public static Edge[] getMST(Graph graph) {
         int graphSize = graph.getVerticesSize();
         int[] parent = new int[graphSize];
         List<Edge> result = new ArrayList<>();
@@ -43,14 +43,14 @@ public class Kruskal {
                 pq.offer(e);
             }
         }
-        while (result.size() != graphSize-1){
+        while (result.size() != graphSize - 1) {
             Edge e = pq.poll();
-            if(!containsCycle(parent,e.getSource(), e.getDestination())){
+            if (!containsCycle(parent, e.getSource(), e.getDestination())) {
                 result.add(e);
             }
         }
 
 
-        return result.isEmpty()? new Edge[1] : result.toArray(new Edge[result.size()]);
+        return result.isEmpty() ? new Edge[1] : result.toArray(new Edge[result.size()]);
     }
 }
