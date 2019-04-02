@@ -47,7 +47,7 @@ public class Dijsktra {
 
     public static void main(String[] args){
         int vertices = 5;
-        Graph graph = new Graph(vertices);
+        Graph graph = new Graph(vertices, true);
         graph.addEdge(0, 1, 10);
         graph.addEdge(0, 2, 3);
         graph.addEdge(1, 2, 1);

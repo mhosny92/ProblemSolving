@@ -14,7 +14,7 @@ public class Main {
         PrintWriter out = new PrintWriter(new BufferedOutputStream(System.out));
 
         int totalAvailableCities = scanner.nextInt();
-        Graph graph = new Graph(totalAvailableCities);
+        Graph graph = new Graph(totalAvailableCities, true);
         int totalAvailableRoads = scanner.nextInt();
         for (int i = 0; i < totalAvailableRoads; i++) {
             int vertexOne = scanner.nextInt();
