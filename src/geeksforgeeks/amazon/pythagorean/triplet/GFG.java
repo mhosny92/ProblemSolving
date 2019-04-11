@@ -18,19 +18,18 @@ class GFG
             for (int i = 0; i < arrSize; i++) {
                 arr[i] = scanner.nextInt();
                 sq[i] = arr[i] * arr[i];
+                set.add(sq[i]);
             }
             for (int i=0; i<arrSize; i++){
                 if (!found){
-                    if(sq[i] <= 1000000 && set.contains(sq[i])){
-                        found = true;
-                        continue;
-                    }
                     for (int j = i+1; j < arrSize; j++){
                         int temp = sq[i] + sq[j];
-                        if (temp <= 1000000)
-                            set.add(temp);
+                        if (temp <= 1000000 && set.contains(temp)){
+                            found = true;
+                            break;
+                        }
                     }
-                }
+                } else break;
             }
             out.println(found?"Yes":"No");
         }
